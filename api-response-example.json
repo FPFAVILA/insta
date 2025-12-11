@@ -1,0 +1,61 @@
+{
+  "comment": "Exemplo de resposta da API /api/get-user-by-username",
+  "example_request": "GET /api/get-user-by-username?username=cristiano",
+  "example_response": {
+    "user": {
+      "pk": "x8j9k2m3n4p5",
+      "username": "cristiano",
+      "full_name": "Cristiano Ronaldo",
+      "biography": "SIUUUbscribe to my Youtube Channel!",
+      "profile_pic_url": "https://scontent-dfw5-2.cdninstagram.com/v/t51.2885-19/472007201_1142000150877579_994350541752907763_n.jpg",
+      "hd_profile_pic_url_info": {
+        "url": "https://scontent-dfw5-2.cdninstagram.com/v/t51.2885-19/472007201_1142000150877579_994350541752907763_n.jpg"
+      },
+      "follower_count": 666962258,
+      "following_count": 614,
+      "media_count": 3957,
+      "is_private": false,
+      "is_verified": true,
+      "is_business": true,
+      "external_url": "http://avacr7.com/en",
+      "bio_links": [
+        {
+          "title": "AVA",
+          "url": "http://avacr7.com/en"
+        }
+      ],
+      "chaining_results": []
+    },
+    "search_metadata": {
+      "id": "search_875nmM02pVWXi5degwE4z1Yx",
+      "status": "Success",
+      "created_at": "2025-10-28T12:33:26Z",
+      "request_time_taken": 1.41,
+      "parsing_time_taken": 0.01,
+      "total_time_taken": 1.42,
+      "request_url": "https://www.instagram.com/cristiano"
+    }
+  },
+  "field_mapping": {
+    "description": "Mapeamento entre SearchAPI.io e formato esperado",
+    "mappings": {
+      "profile.username": "user.username",
+      "profile.name": "user.full_name",
+      "profile.bio": "user.biography",
+      "profile.avatar": "user.profile_pic_url",
+      "profile.avatar_hd": "user.hd_profile_pic_url_info.url",
+      "profile.followers": "user.follower_count",
+      "profile.following": "user.following_count",
+      "profile.posts": "user.media_count",
+      "profile.is_verified": "user.is_verified",
+      "profile.is_business": "user.is_business",
+      "profile.external_link": "user.external_url",
+      "profile.bio_links": "user.bio_links"
+    }
+  },
+  "notes": {
+    "pk": "ID fictício gerado, pois SearchAPI não retorna",
+    "is_private": "Sempre false, pois SearchAPI só retorna perfis públicos",
+    "chaining_results": "Lista vazia, pois SearchAPI não retorna perfis sugeridos"
+  }
+}

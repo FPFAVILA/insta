@@ -1,0 +1,12 @@
+{
+  "name": "instagram-stalker-app",
+  "version": "1.0.0",
+  "description": "Instagram Profile Analyzer usando SearchAPI.io",
+  "scripts": {
+    "dev": "echo 'Site estático - abra o index.html'",
+    "build": "echo 'Build completo'",
+    "start": "echo 'Site estático pronto'"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
