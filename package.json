@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Instagram Profile Analyzer usando SearchAPI.io",
   "scripts": {
-    "dev": "echo 'Site estático - abra o index.html'",
-    "build": "echo 'Build completo'",
-    "start": "echo 'Site estático pronto'"
+    "build": "node -e \"console.log('Build OK: Site estático pronto para deploy')\"",
+    "dev": "echo 'Abra o index.html no navegador'",
+    "start": "echo 'Site estático'"
   },
   "dependencies": {},
   "devDependencies": {}
